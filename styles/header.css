@@ -1,8 +1,6 @@
 .header-banner {
     background-color: var(--site-background-color);
     display: block;
-    position: sticky;
-    top: 0;
 }
 
 .header-logo {
@@ -13,39 +11,5 @@
     img {
         width: 100px;
         border-radius: 50%;
-    }
-}
-
-.main-nav {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    li {
-        padding: 10px 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: var(--site-text-color);
-        font-family: var(--site-font-family);
-        padding: 10px 25px;
-        transition: all 0.5s;
-    }
-    a:hover {
-        background-color: var(--site-primary-color);
-        color: var(--site-primary-color-tint);
-    }
-
-    .main-nav_current-page-link {
-        background-color: var(--site-primary-color);
-        color: var(--site-primary-color-tint);
     }
 }
