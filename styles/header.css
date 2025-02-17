@@ -1,0 +1,15 @@
+.header-banner {
+    background-color: var(--site-background-color);
+    display: block;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    img {
+        width: 100px;
+        border-radius: 50%;
+    }
+}
