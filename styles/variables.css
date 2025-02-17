@@ -1,0 +1,45 @@
+:root {
+    /* Site colour scheme */
+    --site-primary-color: #796EFF;
+    --site-primary-color-tint: #F6F3FC;
+    --site-background-color: #FBFAFE;
+
+    --footer-background-color: #1D2830;
+
+    --site-headings-color: #35414B;
+    --site-text-color: #4E5A65;
+
+
+    /* Site font scheme */
+    --site-font-family: "Inter", serif;
+    --text-body-size: 16px;
+    --text-body-line-height: 24px;
+
+    /*      Desktop     */
+    --desktop-h1-size: 64px;
+    --desktop-h1-line-height: 76px;
+    --desktop-h1-strength: 600;
+    
+    --desktop-h2-size: 40px;
+    --desktop-h2-line-height: 48px;
+    --desktop-h2-strength: 600;
+    
+    --desktop-h3-size: 28px;
+    --desktop-h3-line-height: 36px;
+    --desktop-h3-strength: 600;
+
+
+    /*      - Mobile    */
+    --mobile-h1-size: 32px;
+    --mobile-h1-line-height: 40px;
+    --mobile-h1-strength: 600;
+    
+    --mobile-h2-size: 20px;
+    --mobile-h2-line-height: 28px;
+    --mobile-h2-strength: 600;
+    
+    --mobile-h3-size: 18px;
+    --mobile-h3-line-height: 28px;
+    --mobile-h3-strength: 600;
+
+}
