@@ -1,0 +1,33 @@
+.signup-benefits-section {
+    background-color: var(--site-primary-color-tint);
+    display: flex;
+    padding: 50px 100px;
+}
+
+.signup-benefits-section__left {
+    width: 50%;
+    padding: 100px 0px;
+}
+
+.signup-benefits-section__text {
+    font-family: var(--site-font-family);
+    font-size: var(--site-font-size);
+    line-height: var(--text-body-line-height);
+}
+
+.signup-button {
+    border: none;
+    display: block;
+    width: 25%;
+    height: 50px;
+    background-color: var(--site-primary-color);
+    color: var(--site-background-color);
+    font-family: var(--site-font-family);
+    font-size: var(--site-font-size);
+    line-height: var(--text-body-line-height);
+    border-radius: 5px;
+}
+
+.signup-benefits-section__image {
+    width: 50%;
+}
