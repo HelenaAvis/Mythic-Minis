@@ -4,8 +4,9 @@
 @import url("body.css");
 @import url("header.css");
 @import url("nav.css");
+@import url("sectionHeading.css");
+@import url("introSection.css");
 @import url("reviewSection.css");
 @import url("footer.css");
 @import url("homePage.css");
 @import url("productCard.css");
-@import url("sectionHeading.css");
