@@ -11,13 +11,13 @@
             text-align: center;
         }
 
-        p {
+        /*p {
             font-family: var(--site-font-family);
             font-size: var(--text-body-size);
             line-height: var(--text-body-line-height);
             color: var(--site-text-color);
 
-        }
+        }*/
 
         img {
             width: 75%;

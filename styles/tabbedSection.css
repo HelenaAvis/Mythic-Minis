@@ -9,20 +9,20 @@
         padding: 0;
     }
 
-    h3 {
+    /*h3 {
         font-family: var(--site-font-family);
         font-size: var(--desktop-h3-size);
         line-height: var(--desktop-h3-line-height);
         font-weight: var(--desktop-h3-strength);
         color: var(--site-headings-color);
-    }
+    }*/
 
-    p {
+    /*p {
         font-family: var(--site-font-family);
         font-size: var(--text-body-size);
         line-height: var(--text-body-line-height);
         color: var(--site-text-color);
-    }
+    }*/
 }
 
 .tabs {
