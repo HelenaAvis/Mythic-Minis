@@ -11,14 +11,6 @@
             text-align: center;
         }
 
-        p {
-            font-family: var(--site-font-family);
-            font-size: var(--text-body-size);
-            line-height: var(--text-body-line-height);
-            color: var(--site-text-color);
-
-        }
-
         img {
             width: 75%;
             border-radius: 40px;
