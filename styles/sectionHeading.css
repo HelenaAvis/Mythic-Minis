@@ -1,7 +1,0 @@
-.section-heading {
-    font-family: var(--site-font-family);
-    font-size: var(--desktop-h2-size);
-    line-height: var(--desktop-h2-line-height);
-    font-weight: var(--desktop-h2-strength);
-    color: var(--site-headings-color);
-}

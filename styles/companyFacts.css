@@ -17,17 +17,3 @@
 .fact__icon {
     width: 50px;
 }
-
-.fact__heading {
-    font-family: var(--site-font-family);
-    font-size: var(--site-font-size);
-    line-height: var(--text-body-line-height);
-    color: var(--site-headings-color);
-}
-
-.fact__text {
-    font-family: var(--site-font-family);
-    font-size: var(--site-font-size);
-    line-height: var(--text-body-line-height);
-    color: var(--site-text-color);
-}

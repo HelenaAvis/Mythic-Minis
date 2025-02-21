@@ -1,0 +1,68 @@
+.section-heading {
+    font-family: var(--site-font-family);
+    font-size: var(--desktop-h2-size);
+    line-height: var(--desktop-h2-line-height);
+    font-weight: var(--desktop-h2-strength);
+    color: var(--site-headings-color);
+}
+
+/* --- Dektop headings --- */
+.heading-1-desktop {
+    font-family: var(--site-font-family);
+    line-height: var(--desktop-h1-line-height);
+    font-weight: var(--desktop-h1-strength);
+    font-size: var(--desktop-h1-size);
+    color: var(--site-headings-color);
+}
+
+.heading-2-desktop {
+    font-family: var(--site-font-family);
+    line-height: var(--desktop-h2-line-height);
+    font-weight: var(--desktop-h2-strength);
+    font-size: var(--desktop-h2-size);
+    color: var(--site-headings-color);
+}
+
+.heading-3-desktop {
+    font-family: var(--site-font-family);
+    line-height: var(--desktop-h3-line-height);
+    font-weight: var(--desktop-h3-strength);
+    font-size: var(--desktop-h3-size);
+    color: var(--site-headings-color);
+}
+
+
+
+/* --- Mobile headings --- */
+.heading-1-mobile {
+    font-family: var(--site-font-family);
+    line-height: var(--mobile-h1-line-height);
+    font-weight: var(--mobile-h1-strength);
+    font-size: var(--mobile-h1-size);
+    color: var(--site-headings-color);
+}
+
+.heading-2-mobile {
+    font-family: var(--site-font-family);
+    line-height: var(--mobile-h2-line-height);
+    font-weight: var(--mobile-h2-strength);
+    font-size: var(--mobile-h2-size);
+    color: var(--site-headings-color);
+}
+
+.heading-3-mobile {
+    font-family: var(--site-font-family);
+    line-height: var(--mobile-h3-line-height);
+    font-weight: var(--mobile-h3-strength);
+    font-size: var(--mobile-h3-size);
+    color: var(--site-headings-color);
+}
+
+
+/* --- Text body --- */
+.text-body {
+    font-family: var(--site-font-family);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+    color: var(--site-text-color);
+}
