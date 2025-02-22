@@ -1,30 +1,35 @@
 {"products":[
     {
         "name":"Space Marine",
-        "description":"A genetically enhanced super-soldier, clad in power armor and armed with advanced weaponry. Trained for warfare in the most extreme conditions, they are relentless warriors, dedicated to duty, honor, and the destruction of their enemies. Whether fighting in the void of space, on alien worlds, or in massive battles, they are elite shock troops, feared and respected across the galaxy.",
+        "image":"../images/placeholderImage.png",
+        "description":"A genetically enhanced super-soldier, clad in power armor and armed with advanced weaponry.",
         "rating":5,
         "price":10.99
     },
     {
         "name":"Elf Warrior",
-        "description":"A fierce and agile combatant, the elf warrior moves with unmatched grace and precision. With keen eyesight and heightened reflexes, they excel in both melee and ranged combat, wielding elegantly crafted swords, bows, or spears",
+        "image":"../images/placeholderImage.png",
+        "description":"A fierce and agile combatant, the elf warrior moves with unmatched grace and precision.",
         "rating":5,
         "price":10.99
     },
     {
         "name":"British Rifleman",
-        "description":"A WWII British rifleman was a frontline infantry soldier equipped with a Lee-Enfield bolt-action rifle, known for its reliability and rapid rate of fire. Dressed in a khaki battledress and wearing a Brodie helmet, he carried essential gear such as ammunition pouches, an entrenching tool, and a bayonet. Trained in marksmanship, fieldcraft, and basic tactics, the rifleman played a crucial role in infantry operations, advancing under fire, holding defensive positions, and supporting his unit with accurate rifle fire.",
+        "image":"../images/placeholderImage.png",
+        "description":"A WWII British rifleman was a frontline infantry soldier equipped with a Lee-Enfield bolt-action rifle, known for its reliability and rapid rate of fire.",
         "rating":5,
         "price":10.99
     },
     {
         "name":"Sherman Tank",
-        "description":"The M4 Sherman was the primary medium tank used by the United States and its Allies during World War II. Known for its reliability, ease of production, and versatility, the Sherman featured a 75mm main gun, a rotating turret, and armor that varied in thickness. It was powered by a range of engines, including radial, diesel, and multibank types, giving it a top speed of around 25-30 mph.",
+        "image":"../images/placeholderImage.png",
+        "description":"The M4 Sherman was the primary medium tank used by the United States and its Allies during World War II.",
         "rating":5,
         "price":15.99
     },
     {
         "name":"Ruined Well",
+        "image":"../images/placeholderImage.png",
         "description":"A ruined well.",
         "rating":5,
         "price":6.99
