@@ -15,8 +15,12 @@ function search(query) {
     .then(data => {
         console.log("Data loaded from file");
         const products = data.products;
+        // Clear existing search results
+        while (resultsList.firstChild) {
+            resultsList.firstChild.remove();
+        }
         for (let i = 0; i < products.length; i++) {
-            if (products[i].name.toLowerCase().includes(query)) {
+            if (products[i].name.toLowerCase().includes(query.toLowerCase())) {
                 createSearchResult(products[i]);
             }
         }
@@ -39,7 +43,7 @@ function createSearchResult(product) {
     searchResult.appendChild(resultTextContent);
     // Create result title and add it to the text container
     const resultTitle = document.createElement("h3");
-    resultTitle.textContent = product.description;
+    resultTitle.textContent = product.name;
     resultTitle.classList.add("heading-3-desktop");
     resultTextContent.appendChild(resultTitle);
     // Create description and add it to the text container

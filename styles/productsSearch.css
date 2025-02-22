@@ -17,12 +17,13 @@
 .search-results {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
 .result {
     width: 30%;
+    margin: 0px 1.5%;
 }
 
 .result__image {
