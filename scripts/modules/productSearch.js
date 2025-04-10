@@ -1,20 +1,51 @@
 const resultsList = document.querySelector(".search-results");
 const searchInput = document.querySelector(".search-input");
-const resultsCount = document.querySelector(".results-count");
-const moreResultsButton = document.querySelector(".more-results-button--hidden");
-let results = [];
-
 searchInput.addEventListener("keyup", function(e) {
     search(searchInput.value);
 });
+const resultsCount = document.querySelector(".results-count");
+const moreResultsButton = document.querySelector(".more-results-button--hidden");
+moreResultsButton.addEventListener("click", function(e) {
+    showMoreResults();
+});
+let results = [];
+let visibleResults = 6;
 
-function clearSearch() {
+function clearExistingResults() {
     // Clear existing search results
     while (resultsList.firstChild) {
         resultsList.firstChild.remove();
     }
+}
+
+function clearSearch() {
+    clearExistingResults();
     results = [];
-    resultsCount.textContent = "0 products found";
+    updateResultsCount();
+    visibleResults = 6;
+}
+
+function updateResultsCount() {
+    resultsCount.textContent = results.length + " products found";
+}
+
+function showMoreResults() {
+    visibleResults += 3;
+    console.log("Increasing visible results to: " + visibleResults);
+    updateMoreResultsButton();
+    createResultsList(results);
+}
+
+function updateMoreResultsButton() {
+    if (results.length > visibleResults) {
+        // show more results button
+        moreResultsButton.classList.remove("more-results-button--hidden");
+        moreResultsButton.classList.add("more-results-button--visible");
+    } else {
+        // hide more results button
+        moreResultsButton.classList.remove("more-results-button--visible");
+        moreResultsButton.classList.add("more-results-button--hidden");
+    }
 }
 
 function search(query) {
@@ -30,16 +61,30 @@ function search(query) {
             while (resultsList.firstChild) {
                 resultsList.firstChild.remove();
             }
+            // Get search results
             results = [];
             for (let i = 0; i < products.length; i++) {
                 if (products[i].name.toLowerCase().includes(query.toLowerCase())) {
                     results.push(products[i]);
-                    createSearchResult(products[i]);
                 }
             }
-            resultsCount.textContent = results.length + " products found";
+
+            if (results.length < visibleResults) {
+                visibleResults = results.length;
+            }
+
+            updateMoreResultsButton();
+            createResultsList(results);
         });
     }
+}
+
+function createResultsList(results) {
+    clearExistingResults();
+    for (let i = 0; i < visibleResults; i++) {
+        createSearchResult(results[i]);
+    }
+    updateResultsCount();
 }
 
 function createSearchResult(product) {
