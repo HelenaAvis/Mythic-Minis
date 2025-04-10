@@ -1,37 +1,39 @@
-{"products":[
-    {
-        "name":"Space Marine",
-        "image":"../images/placeholderImage.png",
-        "description":"A genetically enhanced super-soldier, clad in power armor and armed with advanced weaponry.",
-        "rating":5,
-        "price":10.99
-    },
-    {
-        "name":"Elf Warrior",
-        "image":"../images/placeholderImage.png",
-        "description":"A fierce and agile combatant, the elf warrior moves with unmatched grace and precision.",
-        "rating":5,
-        "price":10.99
-    },
-    {
-        "name":"British Rifleman",
-        "image":"../images/placeholderImage.png",
-        "description":"A WWII British rifleman was a frontline infantry soldier equipped with a Lee-Enfield bolt-action rifle, known for its reliability and rapid rate of fire.",
-        "rating":5,
-        "price":10.99
-    },
-    {
-        "name":"Sherman Tank",
-        "image":"../images/placeholderImage.png",
-        "description":"The M4 Sherman was the primary medium tank used by the United States and its Allies during World War II.",
-        "rating":5,
-        "price":15.99
-    },
-    {
-        "name":"Ruined Well",
-        "image":"../images/placeholderImage.png",
-        "description":"A ruined well.",
-        "rating":5,
-        "price":6.99
-    }
-]}
+{
+    "products":[
+        {
+            "name":"Space Marine",
+            "image":"../images/placeholderImage.png",
+            "description":"A genetically enhanced super-soldier, clad in power armor and armed with advanced weaponry.",
+            "rating":5,
+            "price":10.99
+        },
+        {
+            "name":"Elf Warrior",
+            "image":"../images/placeholderImage.png",
+            "description":"A fierce and agile combatant, the elf warrior moves with unmatched grace and precision.",
+            "rating":5,
+            "price":10.99
+        },
+        {
+            "name":"British Rifleman",
+            "image":"../images/placeholderImage.png",
+            "description":"A WWII British rifleman was a frontline infantry soldier equipped with a Lee-Enfield bolt-action rifle, known for its reliability and rapid rate of fire.",
+            "rating":5,
+            "price":10.99
+        },
+        {
+            "name":"Sherman Tank",
+            "image":"../images/placeholderImage.png",
+            "description":"The M4 Sherman was the primary medium tank used by the United States and its Allies during World War II.",
+            "rating":5,
+            "price":15.99
+        },
+        {
+            "name":"Ruined Well",
+            "image":"../images/placeholderImage.png",
+            "description":"A ruined well.",
+            "rating":5,
+            "price":6.99
+        }
+    ]
+}

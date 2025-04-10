@@ -1,30 +1,45 @@
 const resultsList = document.querySelector(".search-results");
 const searchInput = document.querySelector(".search-input");
+const resultsCount = document.querySelector(".results-count");
+const moreResultsButton = document.querySelector(".more-results-button--hidden");
+let results = [];
+
 searchInput.addEventListener("keyup", function(e) {
-    if (e.key === "Enter" && searchInput.value.length > 0) {
-        // submit search with query
-        search(searchInput.value);
-    }
+    search(searchInput.value);
 });
+
+function clearSearch() {
+    // Clear existing search results
+    while (resultsList.firstChild) {
+        resultsList.firstChild.remove();
+    }
+    results = [];
+    resultsCount.textContent = "0 products found";
+}
 
 function search(query) {
     console.log("Searching for query: " + query);
-
-    fetch("../../data/products.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log("Data loaded from file");
-        const products = data.products;
-        // Clear existing search results
-        while (resultsList.firstChild) {
-            resultsList.firstChild.remove();
-        }
-        for (let i = 0; i < products.length; i++) {
-            if (products[i].name.toLowerCase().includes(query.toLowerCase())) {
-                createSearchResult(products[i]);
+    clearSearch();
+    if (query.length > 0) {
+        fetch("../../data/products.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log("Data loaded from file");
+            const products = data.products;
+            // Clear existing search results
+            while (resultsList.firstChild) {
+                resultsList.firstChild.remove();
             }
-        }
-    });
+            results = [];
+            for (let i = 0; i < products.length; i++) {
+                if (products[i].name.toLowerCase().includes(query.toLowerCase())) {
+                    results.push(products[i]);
+                    createSearchResult(products[i]);
+                }
+            }
+            resultsCount.textContent = results.length + " products found";
+        });
+    }
 }
 
 function createSearchResult(product) {
