@@ -69,6 +69,19 @@ function createSearchResult(product) {
     resultDescription.appendChild(resultDescriptionText);
     resultTextContent.appendChild(resultDescription);
     // Create rating and add it to the text container
+    const resultRating = document.createElement("div");
+    resultRating.classList.add("result__rating");
+    resultTextContent.appendChild(resultRating);
+    for (let i = 0; i < 5; i++) {
+        const star = document.createElement("img");
+        if (i < product.rating) {
+            star.src = "../../images/starFull.png";
+        } else {
+            star.src = "../../images/starEmpty.png";
+        }
+        star.classList.add("star");
+        resultRating.appendChild(star);
+    }
     // Create price and add it to the text container
     const resultPrice = document.createElement("p");
     resultPrice.classList.add("text-body");
