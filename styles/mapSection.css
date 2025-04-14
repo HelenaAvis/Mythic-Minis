@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 50px 0px;
     background-color: var(--site-primary-color-tint);
 }
 
@@ -11,4 +12,51 @@
 
 .map {
     width: 100%;
+}
+
+.map-section__form-container {
+    width: 45%;
+}
+
+.contact-form {
+    width: 100%;
+}
+.contact-form__label {
+    font-family: var(--site-font-family);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+}
+
+.contact-form__input {
+    width: 75%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-family: var(--site-font-family);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+}
+
+.contact-form__input--area {
+    width: 75%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-family: var(--site-font-family);
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line-height);
+    resize: none;
+}
+
+.contact-form__button {
+    border: none;
+    display: block;
+    width: fit-content;
+    padding: 10px 15px;
+    height: 50px;
+    background-color: var(--site-primary-color);
+    color: var(--site-background-color);
+    font-family: var(--site-font-family);
+    font-size: var(--site-font-size);
+    line-height: var(--text-body-line-height);
+    border-radius: 5px;
 }
