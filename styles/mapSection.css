@@ -1,0 +1,14 @@
+.map-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--site-primary-color-tint);
+}
+
+.map-section__map-container {
+    width: 45%;
+}
+
+.map {
+    width: 100%;
+}
