@@ -31,8 +31,6 @@
     color: var(--site-headings-color);
 }
 
-
-
 /* --- Mobile headings --- */
 .heading-1-mobile {
     font-family: var(--site-font-family);
@@ -57,7 +55,6 @@
     font-size: var(--mobile-h3-size);
     color: var(--site-headings-color);
 }
-
 
 /* --- Text body --- */
 .text-body {
