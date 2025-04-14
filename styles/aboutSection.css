@@ -1,0 +1,23 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-section__text {
+    width: 45%;
+}
+
+.about-section__image-container {
+    width: 45%;
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.about-section__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
