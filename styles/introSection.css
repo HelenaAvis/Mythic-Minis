@@ -15,14 +15,12 @@
             width: 75%;
             border-radius: 40px;
         }
-
     }
 }
 
 @layer brands {
     .top-ttrpgs {
         display: flex;
-
 
         ul {
             list-style: none;

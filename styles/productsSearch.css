@@ -50,7 +50,7 @@
     width: 15%;
 }
 
-.more-results-button--visible{
+.more-results-button--visible {
     display: block;
     width: 30%;
     background-color: var(--site-primary-color);

@@ -1,16 +1,15 @@
-const reviewButtonContainer = document.querySelector(".review-button-container");
-const reviewContainer = document.querySelector(".reviews-spotlight-section");
+const reviewButtonContainer = document.querySelector('.review-button-container');
+const reviewContainer = document.querySelector('.reviews-spotlight-section');
 
 function changeReview() {
     // Swith selected tab
-    reviewButtonContainer.querySelector(".selected").classList.remove("selected");
-    this.classList.add("selected");
-    
+    reviewButtonContainer.querySelector('.selected').classList.remove('selected');
+    this.classList.add('selected');
+
     // Hide currently visible review
-    document.querySelector(".visible").classList.remove("visible");
+    document.querySelector('.visible').classList.remove('visible');
     // Find the index of the button that was clicked, and use it to find the relevant review
-    reviewContainer.children[Array.from(reviewButtonContainer.children).indexOf(this) + 1].classList.add("visible");
-    
+    reviewContainer.children[Array.from(reviewButtonContainer.children).indexOf(this) + 1].classList.add('visible');
 }
 
 function addButtonEventListeners() {
@@ -19,7 +18,7 @@ function addButtonEventListeners() {
     // }
 
     for (let i = 0; i < reviewButtonContainer.children.length; i++) {
-        reviewButtonContainer.children[i].addEventListener("click", changeReview);
+        reviewButtonContainer.children[i].addEventListener('click', changeReview);
     }
 }
 
