@@ -52,7 +52,7 @@ function search(query) {
     console.log('Searching for query: ' + query);
     clearSearch();
     if (query.length > 0) {
-        fetch('../../data/products.json')
+        fetch('https://helenaavis.github.io/Mythic-Minis/data/products.json')
             .then((response) => response.json())
             .then((data) => {
                 console.log('Data loaded from file');
@@ -120,9 +120,9 @@ function createSearchResult(product) {
     for (let i = 0; i < 5; i++) {
         const star = document.createElement('img');
         if (i < product.rating) {
-            star.src = '../../images/starFull.png';
+            star.src = 'https://helenaavis.github.io/Mythic-Minis/images/starFull.png';
         } else {
-            star.src = '../../images/starEmpty.png';
+            star.src = 'https://helenaavis.github.io/Mythic-Minis/images/starEmpty.png';
         }
         star.classList.add('star');
         resultRating.appendChild(star);
